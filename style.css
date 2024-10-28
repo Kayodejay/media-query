@@ -66,5 +66,47 @@ body{
     color: #fff;
 }
 
+@media all and (max-width: 768px){
+    
+    body{
+        background-color: rgb(131, 232, 73);
+    }
+    
+    .wrap{
+        display: grid;
+        gap: .5rem;
+        grid-template-areas:
+            'one two two two three'
+            'one six six six three'
+            'one five four four three'
+            'one five four four three';
+    }
 
-@media 
+    .box:nth-child(1){
+        background-color: rgb(255, 50, 50);
+        border-radius: 216px;
+    }
+}
+
+@media all and (max-width: 500px){
+    
+    body{
+        background-color: rgb(180, 180, 249);
+    }
+    
+    .wrap{
+        display: grid;
+        gap: .5rem;
+        grid-template-areas:
+            'one two two six'
+            'one three three six'
+            'one four four six'
+            'one five five five';
+    }
+
+    .box:nth-child(1){
+        background-color: rgb(255, 50, 50);
+        border-radius: 216px;
+    }
+}
+
